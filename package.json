@@ -1,0 +1,20 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "//Modules- Learned about How to access file in another file //EventModules-learned about 0n and emit",
+  "homepage": "https://github.com/SAMPATSARKAR/NodeJs#readme",
+  "bugs": {
+    "url": "https://github.com/SAMPATSARKAR/NodeJs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SAMPATSARKAR/NodeJs.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
