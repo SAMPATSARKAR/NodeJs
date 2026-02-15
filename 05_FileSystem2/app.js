@@ -4,7 +4,7 @@ const fs = require('fs');
 //         console.log(err);
         
 //     }else{
-//         // console.log('folder successfully created');
+//         console.log('folder successfully created');
 //         // fs.rmdir('tutorial',(err)=>{
 //         //     if(err){
 //         //         console.log(err);
@@ -14,15 +14,16 @@ const fs = require('fs');
                 
 //         //     }
 //         // })
-// //creating file
-//         // fs.writeFile('./tutorial/example.txt','123',()=>{
-//         //     if(err){
-//         //         console.log(err);
+//     }})
+// creating file
+        // fs.writeFile('./tutorial/example.txt','123',(err)=>{
+        //     if(err){
+        //         console.log(err);
                 
-//         //     }else{
-//         //         console.log('Successfully created file');
-//         //     }
-//         // })
+        //     }else{
+        //         console.log('Successfully created file');
+        //     }
+        // })
 //     }
 // })
 
@@ -43,13 +44,15 @@ const fs = require('fs');
 // }
 // });
 
-fs.readdir('example',(err,files)=>{
+fs.readdir('05_FileSystem2/example',(err,files)=>{
     if(err){
         console.log(err);
     }else{
         // console.log(files);
         for(let file of files){
-            fs.unlink('./example/' + file,(err)=>{
+            // console.log(file);
+            
+            fs.unlink('05_FileSystem2/example/' + file,(err)=>{
                 if(err){
                     console.log(err);
                 }else{
